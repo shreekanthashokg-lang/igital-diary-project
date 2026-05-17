@@ -1,0 +1,66 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Digital Diary - Your Personal Journal{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1 class="display-4 mb-3">
+        <i class="fas fa-book-open text-primary"></i> Digital Diary
+    </h1>
+    <p class="lead mb-4">Your personal journal, beautifully designed and securely stored</p>
+    
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            {% if user.is_authenticated %}
+                <a href="/dashboard" class="btn btn-primary btn-lg">
+                    <i class="fas fa-tachometer-alt"></i> Go to Dashboard
+                </a>
+            {% else %}
+                <a href="/login" class="btn btn-primary btn-lg me-3">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="/register" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-user-plus"></i> Register
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-md-4 mb-4">
+        <div class="card diary-card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-lock fa-3x text-primary mb-3"></i>
+                <h4>Secure & Private</h4>
+                <p>Your thoughts are protected with authentication and encryption</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card diary-card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-smile fa-3x text-primary mb-3"></i>
+                <h4>Mood Tracking</h4>
+                <p>Track your emotions with beautiful mood emojis</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card diary-card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                <h4>Responsive Design</h4>
+                <p>Access your diary from any device, anywhere</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info">
+    <h5><i class="fas fa-user-graduate"></i> Demo Credentials</h5>
+    <p><strong>Username:</strong> demo_student</p>
+    <p><strong>Password:</strong> password123</p>
+    <p class="mb-0">Use these credentials to test the application</p>
+</div>
+{% endblock %}

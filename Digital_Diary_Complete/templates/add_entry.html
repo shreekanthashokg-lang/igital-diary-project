@@ -1,0 +1,103 @@
+﻿{% extends "base.html" %}
+
+{% block title %}{{ action }} Entry - Digital Diary{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card diary-card">
+            <div class="card-header text-center bg-primary text-white">
+                <h4 class="mb-0"><i class="fas fa-feather-alt"></i> {{ action }} Diary Entry</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{% if action == 'Edit' %}/entry/{{ entry.id }}/edit{% else %}/entry/add{% endif %}">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" 
+                               value="{{ entry.title if entry else '' }}" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="content" class="form-label">Content</label>
+                        <textarea class="form-control" id="content" name="content" rows="8" required>{{ entry.content if entry else '' }}</textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="mood" class="form-label">Mood</label>
+                            <select class="form-select" id="mood" name="mood">
+                                <option value="happy" {% if entry and entry.mood == 'happy' %}selected{% endif %}>😊 Happy</option>
+                                <option value="excited" {% if entry and entry.mood == 'excited' %}selected{% endif %}>🤩 Excited</option>
+                                <option value="calm" {% if entry and entry.mood == 'calm' %}selected{% endif %}>😌 Calm</option>
+                                <option value="neutral" {% if not entry or entry.mood == 'neutral' %}selected{% endif %}>😐 Neutral</option>
+                                <option value="sad" {% if entry and entry.mood == 'sad' %}selected{% endif %}>😢 Sad</option>
+                                <option value="angry" {% if entry and entry.mood == 'angry' %}selected{% endif %}>😠 Angry</option>
+                                <option value="tired" {% if entry and entry.mood == 'tired' %}selected{% endif %}>😴 Tired</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="entry_date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="entry_date" name="entry_date" 
+                                   value="{{ today }}" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="weather" class="form-label">Weather (Optional)</label>
+                            <input type="text" class="form-control" id="weather" name="weather" 
+                                   value="{{ entry.weather if entry else '' }}">
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="location" class="form-label">Location (Optional)</label>
+                            <input type="text" class="form-control" id="location" name="location" 
+                                   value="{{ entry.location if entry else '' }}">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="tags" class="form-label">Tags (comma-separated)</label>
+                        <input type="text" class="form-control" id="tags" name="tags" 
+                               value="{{ entry.tags if entry else '' }}" 
+                               placeholder="college, project, learning">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label">Privacy</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="is_private" 
+                                       id="private" value="true" 
+                                       {% if not entry or entry.is_private %}checked{% endif %}>
+                                <label class="form-check-label" for="private">
+                                    <i class="fas fa-lock"></i> Private
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="is_private" 
+                                       id="public" value="false"
+                                       {% if entry and not entry.is_private %}checked{% endif %}>
+                                <label class="form-check-label" for="public">
+                                    <i class="fas fa-globe"></i> Public
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <a href="{% if action == 'Edit' %}/entry/{{ entry.id }}{% else %}/dashboard{% endif %}" 
+                           class="btn btn-secondary">
+                            Cancel
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            Save Entry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

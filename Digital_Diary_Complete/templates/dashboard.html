@@ -1,0 +1,85 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Dashboard - Digital Diary{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">
+    <i class="fas fa-tachometer-alt"></i> Dashboard
+</h1>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="display-4 text-primary">{{ total_entries }}</h2>
+                <p class="text-muted">Total Entries</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="display-4 text-primary">{{ public_count }}</h2>
+                <p class="text-muted">Public Entries</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="display-4 text-primary">{{ private_count }}</h2>
+                <p class="text-muted">Private Entries</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Your Diary Entries</h3>
+    <a href="/entry/add" class="btn btn-primary">
+        <i class="fas fa-plus"></i> New Entry
+    </a>
+</div>
+
+{% if entries %}
+    <div class="row">
+        {% for entry in entries %}
+        <div class="col-md-6 mb-4">
+            <div class="card diary-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ entry.title }}</h5>
+                    <p class="card-text text-muted">
+                        {{ entry.content[:100] }}{% if entry.content|length > 100 %}...{% endif %}
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="badge bg-secondary">
+                                {{ entry.entry_date.strftime('%Y-%m-%d') }}
+                            </span>
+                            <span class="badge mood-{{ entry.mood }} ms-2">
+                                {{ entry.mood|title }}
+                            </span>
+                        </div>
+                        <div>
+                            <a href="/entry/{{ entry.id }}" class="btn btn-sm btn-primary">View</a>
+                            <a href="/entry/{{ entry.id }}/edit" class="btn btn-sm btn-warning">Edit</a>
+                            <a href="/entry/{{ entry.id }}/delete" class="btn btn-sm btn-danger" 
+                               onclick="return confirm('Delete this entry?')">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="text-center py-5">
+        <i class="fas fa-book fa-3x text-muted mb-3"></i>
+        <h4>No diary entries yet</h4>
+        <p class="mb-4">Start your diary journey by writing your first entry!</p>
+        <a href="/entry/add" class="btn btn-primary btn-lg">
+            <i class="fas fa-feather-alt"></i> Write First Entry
+        </a>
+    </div>
+{% endif %}
+{% endblock %}

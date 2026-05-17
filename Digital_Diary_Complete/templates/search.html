@@ -1,0 +1,48 @@
+﻿{% extends "base.html" %}
+
+{% block title %}Search Results - Digital Diary{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">
+    <i class="fas fa-search"></i> Search Results
+</h1>
+
+{% if query %}
+    <p class="lead mb-4">Search results for: "<strong>{{ query }}</strong>"</p>
+{% endif %}
+
+{% if entries %}
+    <div class="row">
+        {% for entry in entries %}
+        <div class="col-md-6 mb-4">
+            <div class="card diary-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ entry.title }}</h5>
+                    <p class="card-text text-muted">
+                        {{ entry.content[:100] }}{% if entry.content|length > 100 %}...{% endif %}
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="badge bg-secondary">
+                                {{ entry.entry_date.strftime('%Y-%m-%d') }}
+                            </span>
+                            <span class="badge mood-{{ entry.mood }} ms-2">
+                                {{ entry.mood|title }}
+                            </span>
+                        </div>
+                        <a href="/entry/{{ entry.id }}" class="btn btn-sm btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="text-center py-5">
+        <i class="fas fa-search fa-3x text-muted mb-3"></i>
+        <h4>No results found</h4>
+        <p class="mb-4">Try different search terms or browse public entries.</p>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+{% endif %}
+{% endblock %}
