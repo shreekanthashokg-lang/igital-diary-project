@@ -1,5 +1,5 @@
 ﻿"""
-🎓 DIGITAL DIARY - COMPLETE COLLEGE PROJECT
+🎓 DIGITAL DIARY - MINI PRACTICE PROJECT
 Flask + SQLAlchemy Web Application
 """
 print("=" * 70)
