@@ -3,7 +3,7 @@
 Flask + SQLAlchemy Web Application
 """
 print("=" * 70)
-print("DIGITAL DIARY - COLLEGE PROJECT")
+print("DIGITAL DIARY - MINI PROJECT")
 print("Flask Web Application with Database")
 print("=" * 70)
 
