@@ -1,6 +1,7 @@
 ﻿"""
 🎓 DIGITAL DIARY - MINI PROJECT
 Flask + SQLAlchemy Web Application
+STUDENT DIGITAL DIARY MANAGEMENT
 """
 print("=" * 70)
 print("DIGITAL DIARY - MINI PROJECT")
