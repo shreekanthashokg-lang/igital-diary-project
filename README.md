@@ -1,5 +1,5 @@
 
-Digital Diary - Complete Practice Mini Project 📓
+Mini Project 📓 Digital Diary - Complete Practice 
 A full-featured digital diary web application built with Flask, SQLAlchemy, and Bootstrap 5.
 Designed as a college project to demonstrate user authentication, CRUD operations, mood tracking, tagging, and responsive design.
 
