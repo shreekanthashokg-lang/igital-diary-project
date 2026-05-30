@@ -1,6 +1,6 @@
 
-Practice Project 📓 Digital Diary 
-A full-featured digital diary Web Application built with Flask, SQLAlchemy, and Bootstrap 5.
+Mini Practice Project 📓 Digital Diary 
+A full-featured digital diary Web Application built with Flask,SQLAlchemy and Bootstrap 5.
 Designed as a college project to demonstrate user authentication, CRUD operations, mood tracking, tagging, and responsive design.
 
 https://img.shields.io/badge/Flask-2.3.3-blue
