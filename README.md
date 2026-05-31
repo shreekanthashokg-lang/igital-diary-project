@@ -171,7 +171,7 @@ Feel free to open an issue or submit a pull request.
 This project is open-source and available under the MIT License.
 
 📬 Contact:
-Project Author – College Student
+Project Author –Student
 SHREEKANTH A GUTTEDAR
 GitHub: https://github.com/shreekanthashokg-lang
 Email:  2222509208@svysa-sas.edu.in
