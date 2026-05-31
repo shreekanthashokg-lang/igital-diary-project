@@ -1,7 +1,7 @@
 
 Practice Learning Project Digital Diary 📓
 A full-featured digital diary Web Application built with Flask,SQLAlchemy and Bootstrap 5.
-Designed as a college project to demonstrate user authentication, CRUD operations, mood tracking, tagging, and responsive design.
+Designed as A PRATICE project to demonstrate user authentication, CRUD operations, mood tracking, tagging, and responsive design.
 
 https://img.shields.io/badge/Flask-2.3.3-blue
 https://img.shields.io/badge/SQLAlchemy-3.0.5-red
