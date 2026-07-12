@@ -9,7 +9,7 @@ https://img.shields.io/badge/Bootstrap-5-purple
 https://img.shields.io/badge/license-MIT-green
 
 ✨ Features
-USER AUTHENTICATION – Registration, login, logout, password hashing, “remember me”
+USER AUTHENTICATION – Registration, LOGIN, logout, password hashing, “remember me”
 
 Diary Entries – Create, read, update, delete entries with rich text content
 
