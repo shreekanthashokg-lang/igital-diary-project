@@ -11,7 +11,7 @@ https://img.shields.io/badge/license-MIT-green
 ✨ Features
 USER AUTHENTICATION – REGISTRATION, LOGIN, LOGOUT, PASSWORD HASHING, “remember me”
 
-Diary Entries – Create, read, update, delete entries with rich text content
+DIARY Entries – Create, read, update, delete entries with rich text content
 
 Mood Tracking – Choose mood (happy, excited, calm, sad, etc.) with emoji & colour coding
 
