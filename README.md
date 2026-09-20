@@ -58,7 +58,7 @@ digital-diary/
 ├── static/                # Custom CSS, JS, images (if any)
 │   └── style.css
 └── README.md
-Note: The templates and static folder are required for the app to run.
+NOTE: The templates and static folder are required for the app to run.
 If they are missing, you can create them based on the routes defined in app.py.
 
 🚀 GETTING STARTED
