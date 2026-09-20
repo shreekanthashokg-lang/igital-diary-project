@@ -131,7 +131,7 @@ URL: /api/stats
 
 Method: GET
 
-Response example:
+RESPONSE EXAMPLE:
 
 json
 {
