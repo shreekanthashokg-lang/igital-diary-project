@@ -8,7 +8,7 @@ https://img.shields.io/badge/SQLAlchemy-3.0.5-red
 https://img.shields.io/badge/Bootstrap-5-purple
 https://img.shields.io/badge/license-MIT-green
 
-✨ Features
+✨ FEATURES
 USER AUTHENTICATION – REGISTRATION, LOGIN, LOGOUT, PASSWORD HASHING, “remember me”
 
 DIARY ENTRIES – Create, read, update, delete entries with rich text content
