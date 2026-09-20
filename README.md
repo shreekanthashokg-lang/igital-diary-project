@@ -38,7 +38,7 @@ Database	SQLite + SQLAlchemy ORM
 Authentication	Flask-Login + Werkzeug password hashing
 Frontend	Bootstrap 5, HTML5, CSS3, Jinja2 templates
 Icons	Emoji (mood indicators)
-📁 Project Structure
+📁 PROJECT STRUCTURES
 text
 digital-diary/
 ├── app.py                 # Main application entry point
