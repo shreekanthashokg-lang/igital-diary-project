@@ -105,7 +105,7 @@ Student (Demo)	demo_student	password123
 Admin	admin	admin123
 You can also register a new account from the login page.
 
-📚 Usage Guide
+📚 USAGE GUIDE
 After logging in
 Dashboard – View all your diary entries, filter by mood, see statistics.
 
