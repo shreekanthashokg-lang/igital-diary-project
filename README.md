@@ -61,7 +61,7 @@ digital-diary/
 Note: The templates and static folder are required for the app to run.
 If they are missing, you can create them based on the routes defined in app.py.
 
-🚀 Getting Started
+🚀 GETTING STARTED
 Prerequisites
 Python 3.8 or higher
 
