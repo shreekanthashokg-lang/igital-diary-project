@@ -126,7 +126,7 @@ View individual public entries (private entries are hidden).
 
 Search public entries (limited to public content).
 
-API endpoint
+API ENDPOINT
 URL: /api/stats
 
 Method: GET
