@@ -31,7 +31,7 @@ REST API Endpoint – /api/stats returns global usage statistics (JSON)
 
 Responsive UI – Works on desktop, tablet, and mobile (Bootstrap 5)
 
-🛠️ Tech Stack
+🛠️ TECH STACK
 Layer	Technology
 Backend	Flask (Python)
 Database	SQLite + SQLAlchemy ORM
