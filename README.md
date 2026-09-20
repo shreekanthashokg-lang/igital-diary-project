@@ -97,7 +97,7 @@ Populate sample data (demo user, admin user, and 4 sample entries)
 Open your browser and go to:
 http://localhost:5000
 
-🔐 Demo Credentials
+🔐 DEMO CREDENTIALS
 Use these accounts to test the application immediately:
 
 Role	Username	Password
