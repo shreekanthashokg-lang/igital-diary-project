@@ -154,7 +154,7 @@ Then modify app.py to read from os.environ.get() and set debug=False.
 📸 Screenshots
 (Add actual screenshots of your running app here)
 
-Home Page	Dashboard	Add Entry
+HOME PAGE	Dashboard	Add Entry
 https://screenshots/home.png	https://screenshots/dashboard.png	https://screenshots/add.png
 🧰 Customization
 Add more moods – Edit get_mood_emoji() and get_mood_color() in app.py.
