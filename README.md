@@ -129,7 +129,7 @@ Search public entries (limited to public content).
 API ENDPOINT
 URL: /api/stats
 
-Method: GET
+METHOD: GET
 
 RESPONSE EXAMPLE:
 
