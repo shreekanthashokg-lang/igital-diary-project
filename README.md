@@ -100,7 +100,7 @@ http://localhost:5000
 🔐 DEMO CREDENTIALS
 Use these accounts to test the application immediately:
 
-Role	Username	Password
+ROLE	Username	Password
 Student (Demo)	demo_student	password123
 Admin	admin	admin123
 You can also register a new account from the login page.
@@ -109,7 +109,7 @@ You can also register a new account from the login page.
 After logging in
 Dashboard – View all your diary entries, filter by mood, see statistics.
 
-Add Entry – Write a new diary entry, choose mood, set privacy, add tags.
+ADD ENTRY – Write a new diary entry, choose mood, set privacy, add tags.
 
 Edit/Delete – Each entry has edit/delete buttons (only for your own entries).
 
