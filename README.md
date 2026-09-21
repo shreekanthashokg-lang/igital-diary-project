@@ -32,7 +32,7 @@ REST API Endpoint – /api/stats returns global usage statistics (JSON)
 RESPONSIVE UI – Works on desktop, tablet, and mobile (Bootstrap 5)
 
 🛠️ TECH STACK
-Layer	Technology
+LAYER TECHNOLOGY
 Backend	Flask (Python)
 Database	SQLite + SQLAlchemy ORM
 Authentication	Flask-Login + Werkzeug password hashing
