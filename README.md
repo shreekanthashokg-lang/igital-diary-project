@@ -62,7 +62,7 @@ NOTE: The templates and static folder are required for the app to run.
 If they are missing, you can create them based on the routes defined in app.py.
 
 🚀 GETTING STARTED
-Prerequisites
+PREREUISITES 
 Python 3.8 or higher
 
 pip (Python package manager)
