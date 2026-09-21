@@ -90,7 +90,7 @@ On first run, the script will:
 
 Create digital_diary.db (SQLite database)
 
-Create all tables (User, DiaryEntry)
+CREATE ALL tables (User, DiaryEntry)
 
 Populate sample data (demo user, admin user, and 4 sample entries)
 
