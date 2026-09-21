@@ -68,7 +68,7 @@ Python 3.8 or higher
 pip (Python package manager)
 
 INSTALLATION
-Clone the repository
+CLONE THE REPOSITORY
 
 bash
 git clone https://github.com/your-username/digital-diary.git
