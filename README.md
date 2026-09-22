@@ -29,7 +29,7 @@ Public Entries Feed – Explore recent public entries on the home page
 
 REST API Endpoint – /api/stats returns global usage statistics (JSON)
 
-RESPONSIVE UI – WOKS ON DESKTOP , tablet, and mobile (Bootstrap 5)
+RESPONSIVE UI – WOKS ON DESKTOP , tablet, and mobile (BOOTSTRAP 5)
 
 🛠️ TECH STACK
 LAYER TECHNOLOGY
