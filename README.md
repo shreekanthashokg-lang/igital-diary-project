@@ -1,6 +1,6 @@
 
 📓 DIGITAL DIARY : MINI PROJECT
-A FUL-featured digital diary Web APPLICATION BUILT with Flask,SQLAlchemy and Bootstrap 5.
+A FUL-featured digital diary Web APPLICATION BUILT WITH FLASK,SQLAlchemy and Bootstrap 5.
 Designed as A PRATICE project to demonstrate user authentication, CRUD operations, mood tracking, tagging, and responsive design.
 
 https://img.shields.io/badge/Flask-2.3.3-blue
