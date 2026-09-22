@@ -63,7 +63,7 @@ If they are missing, you can create them based on the routes defined in app.py.
 
 🚀 GETTING STARTED
 PREREUISITES 
-Python 3.8 or higher
+PYTHON 3.8 or HIGHER
 
 pip (Python package manager)
 
