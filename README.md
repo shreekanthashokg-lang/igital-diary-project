@@ -100,7 +100,7 @@ http://localhost:5000
 🔐 DEMO CREDENTIALS
 Use these accounts to test the application immediately:
 
-ROLE	Username	Password
+ROLE	USERNAME PASSWORD
 Student (Demo)	demo_student	password123
 Admin	admin	admin123
 You can also register a new account from the login page.
